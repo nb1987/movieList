@@ -61,6 +61,7 @@ export default function App() {
       }
 
       setMovies(res.data.Search);
+      setError("");
     } catch (e) {
       setError(e.message); //error message in case of failure
     } finally {
